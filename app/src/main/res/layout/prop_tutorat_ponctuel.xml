@@ -6,50 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".PropTutoratPonctuel">
 
-    <TextView
-        android:id="@+id/HeureText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Heure* :"
-        android:textColor="@color/GrisFonceINSAIDE"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <TextView
-        android:id="@+id/jourText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jour* :"
-        android:textColor="@color/GrisFonceINSAIDE"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <TextView
-        android:id="@+id/nouvTutoratText"
-        android:layout_width="185dp"
-        android:layout_height="33dp"
-        android:text="Nouveau Tutorat"
-        android:textColor="@color/GrisFonceINSAIDE"
-        android:textSize="24sp"
-        app:fontFamily="sans-serif"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="70dp" />
+    <RadioButton
+        android:id="@+id/recurrentRadioBtn"
+        android:layout_width="102dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="Récurrent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nouveauTutText" />
 
     <ImageView
         android:id="@+id/logoImage2"
         android:layout_width="168dp"
         android:layout_height="43dp"
-        app:srcCompat="@drawable/logoinsaide"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/nouveauTutText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logoinsaide" />
+
+    <TextView
+        android:id="@+id/nouveauTutText"
+        android:layout_width="179dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Nouveau tutorat"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Heure* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/jourText"
+        app:layout_constraintTop_toBottomOf="@+id/recurrentRadioBtn" />
+
+    <TextView
+        android:id="@+id/jourText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="64dp"
+        android:text="Jour* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeText" />
 
     <TextView
         android:id="@+id/typeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
         android:text="Type* :"
         android:textColor="@color/GrisFonceINSAIDE"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="130dp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage2" />
+
+    <RadioButton
+        android:id="@+id/ponctuelRadioBtn"
+        android:layout_width="93dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Ponctuel"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/recurrentRadioBtn"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nouveauTutText" />
 
 </android.support.constraint.ConstraintLayout>

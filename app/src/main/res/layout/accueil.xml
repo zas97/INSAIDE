@@ -11,18 +11,27 @@
         android:id="@+id/logoImage1"
         android:layout_width="168dp"
         android:layout_height="43dp"
-        app:srcCompat="@drawable/logoinsaide"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/monCompteText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logoinsaide" />
 
     <TextView
         android:id="@+id/monCompteText"
         android:layout_width="140dp"
         android:layout_height="33dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
         android:text="Mon compte"
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="24sp"
         app:fontFamily="sans-serif"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="70dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="67dp" />
 </android.support.constraint.ConstraintLayout>
