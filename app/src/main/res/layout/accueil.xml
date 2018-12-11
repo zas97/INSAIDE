@@ -26,6 +26,7 @@
         android:id="@+id/monCompteText"
         android:layout_width="140dp"
         android:layout_height="33dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="120dp"
         android:layout_marginRight="120dp"
         android:text="Mon compte"
@@ -33,5 +34,5 @@
         android:textSize="24sp"
         app:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="67dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
