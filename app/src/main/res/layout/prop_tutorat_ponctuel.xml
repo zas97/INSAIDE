@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PropTutoratPonctuel">
+
+    <TextView
+        android:id="@+id/HeureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heure* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/jourText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jour* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/nouvTutoratText"
+        android:layout_width="185dp"
+        android:layout_height="33dp"
+        android:text="Nouveau Tutorat"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <ImageView
+        android:id="@+id/logoImage2"
+        android:layout_width="168dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/logoinsaide"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+</android.support.constraint.ConstraintLayout>
