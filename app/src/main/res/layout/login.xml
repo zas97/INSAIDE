@@ -10,21 +10,41 @@
         android:id="@+id/connexionBtn"
         style="@android:style/Widget.Button"
         android:layout_width="134dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="172dp"
         android:background="@color/RED_INSAIDE"
-        android:text="Se connecter"
+        android:text="@string/Connexion"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="?attr/colorBackgroundFloating"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/logoImage"
+        android:layout_width="384dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logoslogan"
+        app:layout_constraintBottom_toTopOf="@+id/connexionBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logoslogan"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </android.support.constraint.ConstraintLayout>
