@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/logo"
@@ -9,30 +10,37 @@
 
     <ImageView
         android:id="@+id/logoImage1"
-        android:layout_width="168dp"
+        android:layout_width="165dp"
         android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toTopOf="@+id/monCompteText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logoinsaide" />
+
 
     <TextView
         android:id="@+id/monCompteText"
-        android:layout_width="140dp"
+        android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="120dp"
         android:layout_marginRight="120dp"
         android:text="Mon compte"
+        android:layout_centerHorizontal="true"
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="24sp"
         app:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+
+    <fragment
+        android:name="com.example.joanc.insaide.Fragment_menu_bar"
+        android:id="@+id/menu_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_menu_bar"/>
+
+
+
+
+</RelativeLayout>
