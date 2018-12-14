@@ -40,12 +40,14 @@
         android:layout_below="@id/nouveauTutText"/>
 
     <RadioGroup
+        android:id="@+id/radiogroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/nouveauTutText"
         android:layout_marginLeft="12dp"
-        android:layout_toRightOf ="@id/typeText">
+        android:layout_toRightOf ="@id/typeText"
+        android:checkedButton="@+id/recurrentRadioBtn">
 
         <RadioButton
             android:id="@+id/recurrentRadioBtn"
@@ -53,15 +55,17 @@
             android:layout_height="wrap_content"
             android:text="Récurrent"
             android:textSize="14sp"
+            style="radiobutton"
             />
 
         <RadioButton
             android:id="@+id/ponctuelRadioBtn"
-            android:layout_width="93dp"
-            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:text="Ponctuel"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            style="radiobutton"/>
 
     </RadioGroup>
 
@@ -72,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginRight="3dp"
         android:text="Jour* :"
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="18sp"
@@ -83,8 +87,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/typeText"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@id/jourText">
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/jourText"
+        android:entries="@array/day_array">
 
     </Spinner>
 
@@ -94,12 +99,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_below="@id/typeText"
+        android:layout_marginLeft="1dp"
+        android:layout_toEndOf="@+id/listeJour"
+        android:layout_toRightOf="@+id/listeJour"
         android:text="Heure* :"
         android:textColor="@color/GrisFonceINSAIDE"
-        android:textSize="18sp"
-        android:layout_marginLeft="70dp"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/listeHeure"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/typeText"
-        android:layout_toRightOf="@id/listeJour"/>
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@id/HeureText"
+        android:entries="@array/time_array">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/commentaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Commentaire :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/jourText"/>
+
+  <EditText
+        android:id="@+id/editCommentaire"
+        android:hint="Ici un commentaire"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_alignLeft="@+id/typeText"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/commentaire"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/validerTuto"
+        style="@android:style/Widget.Button"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/menu_fragment"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/RED_INSAIDE"
+        android:layout_alignParentRight="true"
+        android:text="Valider"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp" />
 
 
 
