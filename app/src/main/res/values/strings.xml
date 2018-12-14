@@ -4,4 +4,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="matieres">
+        <item>Toutes</item>
+        <item>Physique</item>
+        <item>Math</item>
+        <item>Chimie</item>
+        <item>Mécanique</item>
+        <item>Informatique</item>
+    </string-array>
+    <string-array name="jours">
+        <item>Tous</item>
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+    </string-array>
 </resources>

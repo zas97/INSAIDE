@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Accueil" />
-        <activity android:name=".PropTutoratPonctuel"></activity>
+        <activity android:name=".PropTutoratPonctuel" />
+        <activity android:name=".Search"></activity>
     </application>
 
 </manifest>
