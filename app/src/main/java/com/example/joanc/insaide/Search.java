@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 public class Search extends AppCompatActivity {
-
+    Button search;
+    Button notify;
+    LinearLayout tohide;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,5 +54,27 @@ public class Search extends AppCompatActivity {
             }
         });
 
+        search = (Button) findViewById(R.id.searchButton);
+        tohide = (LinearLayout) findViewById(R.id.tohide);
+        tohide.setVisibility(tohide.INVISIBLE);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tohide.setVisibility(tohide.VISIBLE);
+            }
+        });
+
+        notify = (Button) findViewById(R.id.searchButton3);
+        notify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDialog();
+            }
+        });
+    }
+
+    public void openDialog(){
+        Confirmation dialog = new Confirmation();
+        dialog.show(getSupportFragmentManager(),"Confirmation");
     }
 }

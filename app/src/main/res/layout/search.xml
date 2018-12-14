@@ -44,11 +44,13 @@
         tools:layout="@layout/fragment_menu_bar"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="436dp"
-        android:layout_alignParentLeft="true"
+        android:layout_width="371dp"
+        android:layout_height="379dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="110dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
@@ -201,6 +203,7 @@
             android:layout_marginTop="30dp">
 
             <LinearLayout
+                android:id="@+id/tohide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -257,8 +260,22 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0"
                     android:text="Visiter" />
+
             </LinearLayout>
         </ScrollView>
+
+        <Button
+            android:id="@+id/searchButton3"
+            style="@android:style/Widget.Button"
+            android:layout_width="283dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|center"
+            android:layout_weight="1"
+            android:background="@color/RED_INSAIDE"
+            android:text="	🔔Me notifier si nouveau tutorat"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
