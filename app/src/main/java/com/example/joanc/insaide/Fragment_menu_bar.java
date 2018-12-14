@@ -33,6 +33,15 @@ public class Fragment_menu_bar extends Fragment {
             }
         });
 
+        searchButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Search.class);
+                startActivity(intent);
+            }
+        });
+
         //searchButton.setOnClickListener(new View.OnClickListener() {
 
         //TODO
