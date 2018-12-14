@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Accueil" />
         <activity android:name=".PropTutoratPonctuel" />
-        <activity android:name=".consultationTutoratInscrit"></activity>
+        <activity android:name=".consultationTutoratInscrit" />
+        <activity android:name=".consultation_tutorat"></activity>
     </application>
 
 </manifest>
