@@ -19,7 +19,7 @@
         android:layout_marginLeft="13dp"
         android:layout_marginTop="14dp"
         android:background="@color/GrisFonceINSAIDE"
-        android:text=" 13/12/2018                  à BU                                   2 inscrits\n   10h00                         sur Antennes"
+        android:text=" 13/12/2018                  à BU                            2 inscrits\n   10h00                         sur Antennes"
         android:textColor="@android:color/background_light" />
 
     <ImageView
@@ -153,6 +153,21 @@
         android:text="►"
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_alignEnd="@+id/textView28"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/GrisFonceINSAIDE"
+        android:text="►"
+        android:textColor="@color/GrisClairINSAIDE"
+        android:textSize="24sp"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_marginRight="1dp" />
 
 
 </RelativeLayout>
