@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="RED_INSAIDE">#ff0000</color>
     <color name="GrisFonceINSAIDE">#555555</color>
+    <color name="GrisClairINSAIDE">#cccccc</color>
 </resources>
