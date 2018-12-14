@@ -32,5 +32,11 @@ public class Search extends AppCompatActivity {
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerJours.setAdapter(adapter2);
 
+        Spinner spinnerReputation = findViewById(R.id.spinnerReputation);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
+                R.array.reputation, android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerReputation.setAdapter(adapter3);
+
     }
 }
