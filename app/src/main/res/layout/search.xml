@@ -46,9 +46,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="436dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="131dp"
+        android:layout_marginTop="110dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -137,11 +138,12 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/RED_INSAIDE"
                 android:ems="10"
+                android:hint="jj/mm/aaaa"
                 android:inputType="date"
                 android:shadowColor="@color/RED_INSAIDE"
                 android:textColor="@color/GrisFonceINSAIDE"
                 android:textColorHighlight="@color/RED_INSAIDE"
-                android:textColorHint="@color/RED_INSAIDE"
+                android:textColorHint="@color/GrisFonceINSAIDE"
                 android:textColorLink="@color/RED_INSAIDE" />
 
         </LinearLayout>
@@ -170,28 +172,93 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:textSize="50sp"/>
+                android:textSize="50sp" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/searchButton"
-            style="@android:style/Widget.Button"
-            android:layout_width="134dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="124dp"
-            android:layout_marginLeft="124dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="172dp"
-            android:background="@color/RED_INSAIDE"
-            android:text="@string/Connexion"
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="?attr/colorBackgroundFloating"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.008"
-            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/searchButton"
+                style="@android:style/Widget.Button"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginLeft="170dp"
+                android:background="@color/RED_INSAIDE"
+                android:text="Rechercher"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Lundi 16h"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="22sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physique 2 FIMI"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toto"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:text="4.3★"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/visitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="Visiter" />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 

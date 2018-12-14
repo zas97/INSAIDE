@@ -1,9 +1,12 @@
 package com.example.joanc.insaide;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 
@@ -37,6 +40,16 @@ public class Search extends AppCompatActivity {
                 R.array.reputation, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerReputation.setAdapter(adapter3);
+
+        final Button visitButton = (Button) findViewById(R.id.visitButton);
+        visitButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Search.this, consultation_tutorat.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
