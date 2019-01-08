@@ -71,7 +71,7 @@
 
 
     <TextView
-        android:id="@+id/jourText"
+        android:id="@+id/hide3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -82,13 +82,35 @@
         android:textSize="18sp"
         android:layout_below="@id/typeText" />
 
+    <TextView
+        android:id="@+id/hide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeText"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="3dp"
+        android:text="Date* :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/hide2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="145dp"
+        android:ems="10"
+        android:inputType="textPersonName|date" />
+
     <Spinner
-        android:id="@+id/listeJour"
+        android:id="@+id/hide4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/typeText"
         android:layout_marginLeft="0dp"
-        android:layout_toRightOf="@id/jourText"
+        android:layout_toRightOf="@id/hide3"
         android:entries="@array/day_array">
 
     </Spinner>
@@ -101,8 +123,8 @@
 
         android:layout_below="@id/typeText"
         android:layout_marginLeft="1dp"
-        android:layout_toEndOf="@+id/listeJour"
-        android:layout_toRightOf="@+id/listeJour"
+        android:layout_toEndOf="@+id/hide4"
+        android:layout_toRightOf="@+id/hide4"
         android:text="Heure* :"
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="18sp" />
@@ -128,7 +150,7 @@
         android:textSize="18sp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
-        android:layout_below="@id/jourText"/>
+        android:layout_below="@id/hide3"/>
 
   <EditText
         android:id="@+id/editCommentaire"
