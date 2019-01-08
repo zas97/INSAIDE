@@ -1,9 +1,12 @@
 package com.example.joanc.insaide;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 
@@ -19,6 +22,16 @@ public class PropTutoratPonctuel extends AppCompatActivity {
         homeButton.setColorFilter(Color.argb(255, 0, 0,0));
         searchButton.setColorFilter(Color.argb(255, 0, 0,0));
         addButton.setColorFilter(Color.argb(255, 255, 0,0));
+
+        final Button loginButton = (Button) findViewById(R.id.validerTuto);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PropTutoratPonctuel.this, Accueil.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean onContextItemSelected (MenuItem item) {
@@ -36,5 +49,6 @@ public class PropTutoratPonctuel extends AppCompatActivity {
         }
         return true;
     }
+
 
 }
