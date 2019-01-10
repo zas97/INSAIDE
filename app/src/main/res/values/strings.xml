@@ -14,6 +14,16 @@
         <item>Samedi</item>
         <item>Dimanche</item>
     </string-array>
+    <string-array name="niv">
+        <item> FIMI 1</item>
+        <item> FIMI 2</item>
+        <item> IF 3</item>
+        <item> IF 4</item>
+        <item> IF 5</item>
+        <item> TC 3</item>
+        <item> TC 4</item>
+        <item> TC 5</item>
+    </string-array>
     <string-array name="matieres">
         <item>Toutes</item>
         <item>Physique</item>

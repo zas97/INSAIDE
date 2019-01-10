@@ -22,7 +22,7 @@ public class Accueil extends AppCompatActivity {
         searchButton.setColorFilter(Color.argb(255, 0, 0,0));
         addButton.setColorFilter(Color.argb(255, 0, 0,0));
 
-        final Button loginButton = (Button) findViewById(R.id.button3);
+        final Button loginButton = (Button) findViewById(R.id.buttonDeco);
         loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

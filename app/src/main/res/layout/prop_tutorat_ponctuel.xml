@@ -141,6 +141,56 @@
     </Spinner>
 
     <TextView
+        android:id="@+id/niveauxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hide1"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:text="Niveau * :"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/listeNiveau"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hide1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/niveauxText"
+        android:entries="@array/niv" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/niveauxText"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Matière*:"
+        android:textColor="@color/GrisFonceINSAIDE"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerMatieres"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/niveauxText"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/textView"
+        android:layout_weight="1"
+        android:entries="@array/matieres" />
+
+    <TextView
         android:id="@+id/commentaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -149,8 +199,8 @@
         android:textColor="@color/GrisFonceINSAIDE"
         android:textSize="18sp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@id/hide3"/>
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView"/>
 
   <EditText
         android:id="@+id/editCommentaire"
@@ -158,7 +208,7 @@
         android:inputType="textMultiLine"
         android:gravity="top"
         android:layout_width="match_parent"
-        android:layout_height="195dp"
+        android:layout_height="175dp"
         android:layout_alignLeft="@+id/typeText"
         android:layout_marginRight="20dp"
         android:layout_below="@id/commentaire"

@@ -21,6 +21,7 @@
             android:layout_weight="1"
             android:backgroundTintMode="screen"
             android:tint="@android:color/black"
+            android:background="@android:color/transparent"
             android:src="@drawable/baseline_home_black_18dp"
 
             />
@@ -31,6 +32,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/white"
             android:tint="@android:color/black"
+            android:background="@android:color/transparent"
             android:src="@drawable/baseline_search_black_18dp"/>
         <ImageButton
             android:id="@+id/addbutton"
@@ -39,6 +41,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/white"
             android:tint="@android:color/black"
+            android:background="@android:color/transparent"
             android:src="@drawable/baseline_add_black_18dp"/>
 
     </LinearLayout>
